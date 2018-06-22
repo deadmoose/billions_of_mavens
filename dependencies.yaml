@@ -1,0 +1,232 @@
+options:
+  languages: [ "java" ]
+  licenses: [ "notice" ]
+  thirdPartyDirectory: "third_party/java"
+  transitivity: runtime_deps
+  versionConflictPolicy: highest
+
+dependencies:
+
+  com.facebook.presto:
+    presto:
+      lang: java
+      version: "0.187"
+      modules: ["hive", "hive-hadoop2", "spi"]
+
+  com.google.inject:
+    guice:
+      lang: java
+      version: "4.2.0"
+
+  com.google.inject.extensions:
+    guice-servlet:
+      lang: java
+      version: "4.2.0"
+
+  com.google.guava:
+    guava:
+      lang: java
+      version: "25.1-jre"
+
+  com.google.truth:
+    truth:
+      lang: java
+      version: "0.40"
+
+  com.google.truth.extensions:
+    truth-java8-extension:
+      lang: java
+      version: "0.40"
+
+  io.grpc:
+    grpc:
+      lang: java
+      version: "1.12.0"
+      modules: ["all", "netty-shaded", "services"]
+
+  com.google.instrumentation:
+    instrumentation-api:
+      lang: java
+      version: "0.4.3"
+
+  javax.inject:
+    javax.inject:
+      lang: java
+      version: "1"
+
+  org.opentest4j:
+    opentest4j:
+      lang: java
+      version: "1.0.0"
+
+  com.google.mug:
+    mug:
+      lang: java
+      version: "1.12"
+
+  com.google.protobuf:
+    protobuf-java:
+      lang: java
+      version: "3.5.1"
+
+  org.junit.jupiter:
+    junit-jupiter:
+      lang: java
+      version: "5.0.3"
+      modules: [ "api", "engine", "params" ]
+
+  org.junit.platform:
+    junit-platform-launcher:
+      lang: java
+      version: "1.0.3"
+
+  io.prometheus:
+    simpleclient:
+      lang: java
+      version: "0.4.0"
+    simpleclient_guava:
+      lang: java
+      version: "0.4.0"
+    simpleclient_hotspot:
+      lang: java
+      version: "0.4.0"
+    simpleclient_httpserver:
+      lang: java
+      version: "0.4.0"
+    simpleclient_servlet:
+      lang: java
+      version: "0.4.0"
+
+  com.fasterxml.jackson.core:
+    jackson:
+      lang: java
+      version: "2.9.5"
+      modules: [ "databind", "annotations" ]
+
+  com.fasterxml.jackson.dataformat:
+    jackson-dataformat-yaml:
+      lang: java
+      version: "2.9.5"
+
+  com.google.flogger:
+    flogger:
+      lang: java
+      version: "0.1"
+      modules: [ "", "system-backend" ]
+
+  commons-io:
+    commons-io:
+      lang: java
+      version: "2.5"
+
+  commons-logging:
+    commons-logging:
+      lang: java
+      version: "1.2"
+
+  commons-configuration:
+    commons-configuration:
+      lang: java
+      version: "1.8"
+
+  org.apache.httpcomponents:
+    httpclient:
+      lang: java
+      version: "4.5.2"
+
+  com.google.auto.value:
+    auto-value:
+      lang: java
+      version: "1.5.4"
+
+  org.apache.commons:
+    commons-lang3:
+      lang: java
+      version: "3.6"
+    commons-dbcp2:
+      lang: java
+      version: "2.1.1"
+    commons-collections4:
+      lang: java
+      version: "4.1"
+
+  com.amazonaws:
+    aws-java:
+      lang: java
+      version: "1.11.330"
+      modules: ["sdk-s3", "sdk-sqs"]
+
+  mysql:
+    mysql-connector-java:
+      lang: java
+      version: "5.1.6"
+
+  org.mockito:
+    mockito:
+      lang: java
+      version: "2.18.3"
+      modules: ["core", "junit-jupiter"]
+
+  org.hsqldb:
+    hsqldb:
+      lang: java
+      version: "2.4.0"
+
+  org.apache.hadoop:
+    hadoop:
+      lang: java
+      version: "2.7.3"
+      modules: ["common"]
+
+  io.github.openfeign:
+    feign:
+      lang: java
+      version: "9.7.0"
+      modules: ["core", "jaxrs", "jackson", "okhttp", "hystrix"]
+
+  com.aerospike:
+    aerospike-client:
+      lang: java
+      version: "4.1.6"
+
+  com.bettercloud:
+    vault-java-driver:
+      lang: java
+      version: "3.1.0"
+
+  javax.validation:
+    validation-api:
+      lang: java
+      version: "2.0.1.Final"
+
+  org.jasypt:
+    jasypt:
+      lang: java
+      version: "1.9.2"
+
+  com.statemachinesystems:
+    mock-clock:
+      lang: java
+      version: "1.0"
+
+  org.apache.avro:
+    avro:
+      lang: java
+      version: "1.8.2"
+
+  org.apache.parquet:
+    parquet:
+      lang: java
+      version: "1.8.2"
+      modules: ["avro", "hadoop"]
+
+  org.apache.tomcat.embed:
+    tomcat:
+      lang: java
+      version: "8.5.23"
+      modules: ["embed-core"]
+
+  org.inferred:
+    freebuilder:
+      lang: java
+      version: "1.14.9"
